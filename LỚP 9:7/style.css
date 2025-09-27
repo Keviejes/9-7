@@ -1,0 +1,82 @@
+
+body{
+    margin: 0px;
+    background: linear-gradient(to right, rgb(189, 255, 244), rgb(165, 227, 251));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+main{
+    margin: 20px;
+}
+h1{
+    text-align: center;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background: rgb(59, 162, 171);
+    border-bottom: outset;
+    border-width: 8px;
+    border-bottom-color: rgb(78, 176, 176);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px;
+    display:block;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: bold;
+
+}
+.navbar a:hover{
+    background-color: rgb(42, 122, 129);
+    animation-name: size;
+    animation-duration: 0.75s;
+}
+.navbar li{
+    float: left;
+}
+.text{
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+p:hover{
+    animation-name: size;
+    animation-duration: 0.75s;    
+}
+h1:hover{
+    animation-name: size;
+    animation-duration: 0.75s;    
+}
+.linhvuc ul{
+    list-style-type: none;
+}
+.linhvuc a{
+        text-decoration: none;
+}
+li{
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: bold; 
+    padding-right: 40px;
+    animation-name: popup;
+    animation-duration: 1s;
+}
+.linhvuc #hanhchinh:hover{
+    animation-name: size;
+    animation-duration: 3s;
+}
+@keyframes size{
+    100%{transform: scale(103%)}
+}
+@keyframes size{
+    50%{transform: scale(110%)}
+}
+@keyframes popup{
+    from{transform: translateY(100%)}
+}
