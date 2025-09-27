@@ -1,7 +1,7 @@
 
 body{
     margin: 0px;
-    background: linear-gradient(to right, rgb(189, 255, 244), rgb(165, 227, 251));
+    background: linear-gradient(to right, rgb(59, 59, 59), rgb(9, 51, 61));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -10,14 +10,29 @@ main{
 }
 h1{
     text-align: center;
+    color:white;
+    animation-name: popdown;
+    animation-duration: 1s;
+    display:inline-block;
 }
-
+p{
+    color:white;
+    animation-name: popup;
+    animation-duration: 1s;
+    display:inline-block;
+}
+h1:hover{
+    background-color:rgb(85, 109, 101)
+}
+p:hover{
+    background-color:rgb(85, 109, 101)
+}
 .navbar ul{
     list-style-type: none;
-    background: rgb(59, 162, 171);
+    background: rgb(39, 39, 39);
     border-bottom: outset;
     border-width: 8px;
-    border-bottom-color: rgb(78, 176, 176);
+    border-bottom-color: rgb(50, 50, 50);
     padding: 0px;
     margin: 0px;
     overflow: hidden;
@@ -25,7 +40,7 @@ h1{
 .navbar a{
     color:rgb(255, 255, 255);
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
     display:block;
     text-align: center;
     font-family: "Montserrat";
@@ -33,50 +48,47 @@ h1{
 
 }
 .navbar a:hover{
-    background-color: rgb(42, 122, 129);
+    background-color: rgb(128, 128, 128);
     animation-name: size;
     animation-duration: 0.75s;
 }
 .navbar li{
     float: left;
+    animation-name: popup;
+    animation-duration: 1s;
 }
 .text{
     text-align: center;
     font-family: "Montserrat";
     font-weight: bold;
 }
-p:hover{
-    animation-name: size;
-    animation-duration: 0.75s;    
-}
-h1:hover{
-    animation-name: size;
-    animation-duration: 0.75s;    
-}
 .linhvuc ul{
     list-style-type: none;
 }
 .linhvuc a{
-        text-decoration: none;
+    text-decoration: none;
+    color:rgb(188, 223, 255);
+
 }
 li{
     text-align: center;
     font-family: "Montserrat";
     font-weight: bold; 
     padding-right: 40px;
-    animation-name: popup;
-    animation-duration: 1s;
 }
-.linhvuc #hanhchinh:hover{
+.linhvuc:hover{
     animation-name: size;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 @keyframes size{
-    100%{transform: scale(103%)}
+    100%{transform: scale(110%)}
 }
 @keyframes size{
     50%{transform: scale(110%)}
 }
 @keyframes popup{
-    from{transform: translateY(100%)}
+    from{transform: translateY(75%)}
+}
+@keyframes popdown{
+    from{transform: translateY(-10%)}
 }
